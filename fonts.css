@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Dela Gothic One";
+    src: local("Dela Gothic One"),
+         url("fonts/DelaGothicOne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: local("DM Sans"),
+         url("fonts/DMSans-VariableFont.ttf") format("truetype");
+}

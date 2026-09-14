@@ -3,37 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neko Cafe</title>
     <link rel="stylesheet" href="nekocafe.css">
+    <link rel="stylesheet" href="fonts.css">
+    <title>Neko Cafe</title>
 </head>
 <body>
     <nav>
         <div id="nav-left">
-            <img src="assets/cat.svg" alt="catface">
-            <p id="cim" style="font-size: 30px;">Neko Cafe</p>
-            <p style="color: #C0B2EB;">Cat cafe with catgirls</p>
+            <div id="nav-pfp">
+                <img src="assets/cat.svg" alt="catface">
+            </div>
+            <div id="nav-title">
+                <h2>Neko Cafe</h2>
+                <p>Cat cafe with catgirls</p>
+            </div>
         </div>
-        <div id="nav-center">
-            <ul id="sima-b-szin" style="list-style: none; margin: 0; padding: 0; font-family: 'Trattatello', fantasy;">
-                <li style="color: #FFC5E3;">Home</li>
-                <li>Meet the cats</li>
-                <li>Menu</li>
-                <li>Events</li>
-                <li>Bonus</li>
-            </ul>
-        </div>
-        <div id="nav-right">
-            <button id="gomb1">Book a table <img src="assets/calendar.svg" alt="cal"></button>
-        </div>
+
+        <ul id="nav-center">
+            <li style="color: #FFC5E3;">Home</li>
+            <li>Meet the cats</li>
+            <li>Menu</li>
+            <li>Events</li>
+            <li>Bonus</li>
+        </ul>
+
+        <button id="nav-button">
+            Book a table
+            <img src="assets/calendar.svg" alt="cal">
+        </button>
     </nav>
+
     <section id="section1">
-        <div>
-            <h3 id="v-gomb">Tokyo cafe culture meets catgirls</h3>
-            <h1 id="cim">WHERE CATS MEET CATGIRLS</h1>
-            <p id="sima-b-szin"   >Step out of the ordinary and into our candle-lit manga lounge. Sip artisan matcha, indulge in warm taiyaki, and spend peaceful hours surrounded by our charming resident cats.</p>
-            <button id="gomb2">Reserve coffee & cuddles</button>
-            <button id="gomb3">See cafe menu</button>
-            
+        <div id="section1-left">
+            <h3>✨ Cat cafe culture meets catgirls</h3>
+            <h1>WHERE CATS MEET CATGIRLS</h1>
+            <p>Step out of the ordinary and into our candle-lit manga lounge. Sip artisan matcha, indulge in warm taiyaki, and spend peaceful hours surrounded by our charming resident cats.</p>
+
+            <div id="buttons">
+                <button id="s1-button1">Reserve Coffee & Cuddles
+                    <img src="assets/arrow-right.svg" alt="arrow">
+                </button>
+                <button id="s1-button2">See Cafe Menu
+                    <img src="assets/coffee.svg" alt="coffee">
+                </button>
+            </div>
+
             <div id="kartya">
                 <h4>20+</h4>
                 <p>Waifus</p>
@@ -43,11 +57,12 @@
                 <p>Manga library</p>
             </div>
         </div>
-        <div>
+        <div id="section1-right">
             <img src="" alt="">
         </div>
-        
     </section>
+
+
 <section>
 <p></p>
 <h2></h2>
@@ -93,7 +108,7 @@
 </section>
 <section id="section7">
         <p>FAN MAIL</p>
-   
+
     <h1 id="cim">Stories from the Sanctuary</h1>
     <div id="main-comment">
     <div id="comment">
@@ -120,8 +135,8 @@
     <h3>Takahiro Y.</h3>
     <p>@taka_eats_tokyo</p>
     </div>
-    
-        
+
+
     </div>
  </section>
 </body>
@@ -149,7 +164,7 @@
         <p>RSVP Table</p>
     </div>
     <div >
-    
+
         <h4>COMMUNITY</h4>
         <br>
         <p>Adoption Process</p>
@@ -162,17 +177,17 @@
     </div>
     <div>
 <h4>NEKO NEWSLETTER</h4>
- <p>Get 10% off your first reservation and early invites to<br> 
+ <p>Get 10% off your first reservation and early invites to<br>
     Cosplay Nights.</p>
     <input id="kereso" type="text" placeholder="Enter email address">
 </div>
 </div>
-    
 
 
 
 
-    
+
+
 </footer>
 
 </html>
