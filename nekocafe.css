@@ -3,13 +3,21 @@
     --light-pink: #AFA5AD;
     --pink: #FFC5E3;
     --light-purple: #C0B2EB;
-    --dark-purple: #362C3A;
+    --purple: #362C3A;
+    --dark-purple: #221C24;
     --dark-gray: #161318;
+}
+
+html {
+    background-color: black;
 }
 
 body{
     background-color: var(--dark-gray);
     margin: 0;
+    width: 1440px;
+    margin: auto;
+    color: var(--white);
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -39,7 +47,7 @@ nav {
     box-sizing: border-box;
 
     background: var(--dark-gray);
-    border-bottom: 1px solid var(--dark-purple);
+    border-bottom: 1px solid var(--purple);
 }
 
 #nav-left {
@@ -109,15 +117,12 @@ nav {
     align-items: center;
     gap: 32px;
 
-    width: 390px;
-    height: 18px;
-
     li {
         color: var(--light-pink);
 
         font-family: 'DM Sans';
         font-weight: 600;
-        font-size: 14px;
+        font-size: 16px;
         cursor: pointer;
     }
 }
@@ -144,22 +149,24 @@ nav {
     }
 }
 
+section {
+    padding: 97px 80px;
+    box-sizing: border-box;
+}
 
 #section1 {
     background: var(--dark-gray);
-    width: 1440px;
-    height: 680px;
-    padding: 0px 80px;
+    padding: 97px 80px;
 
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 144px;
+
+    border-bottom: 1px solid var(--purple);
 }
 
 #section1-left {
-    width: 624px;
-    height: 486px;
-
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -249,7 +256,178 @@ nav {
             }
         }
     }
+
+    #s1-promo {
+        background: var(--dark-purple);
+        padding: 16px 24px;
+        border-radius: 16px;
+
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-flow: column;
+        justify-items: center;
+        gap: 2px 32px;
+
+        h4 {
+            color: var(--pink);
+            font-family: 'Dela Gothic One';
+            font-weight: 400;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+    }
 }
+
+#section1-right {
+    min-width: 440px;
+    width: 440px;
+    height: 440px;
+    border-radius: 32px;
+    box-sizing: border-box;
+
+    div {
+        border: 3px solid #FFC5E3;
+        border-radius: 32px;
+        width: 440px;
+        height: 440px;
+        background-size: cover;
+        position: absolute;
+        transition: 0.3s ease-in-out;
+
+        &:first-child {
+            z-index: 3;
+            background-image: linear-gradient(#00000022), url(assets/cat-image.png);
+        }
+        &:last-child {
+            z-index: 2;
+            background-image: linear-gradient(#00000022), url(assets/neko-maid.jpg);
+            margin: 18px 0 0 18px;
+        }
+    }
+
+    &:hover {
+        div:first-child {
+            z-index: 1 !important;
+            translate: 18px 18px;
+        }
+        div:last-child {
+            translate: -18px -18px;
+        }
+    }
+}
+
+
+#cat-gallery {
+    display: flex;
+    flex-direction: column;
+    padding: 55px 80px;
+    gap: 48px;
+
+    h2 {
+        width: 100%;
+        color: var(--white);
+        font-family: 'Syne';
+        text-align: center;
+        font-weight: 800;
+        font-size: 44px;
+        line-height: 115%;
+    }
+
+    &>div {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        /*width: 1280px;
+        height: 402px;*/
+    }
+
+    .card {
+        background: var(--dark-purple);
+        border: 2px solid var(--purple);
+        border-radius: 24px;
+
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        box-sizing: border-box;
+        gap: 16px;
+
+        .image {
+            width: 100%;
+            aspect-ratio: 1/1;
+
+            background-image: url(assets/cat-image.png);
+            background-size: cover;
+            border-radius: 16px;
+        }
+
+        .card-desc {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 12px;
+            column-gap: 40px;
+        }
+
+        h4 {
+            color: #F5EFF3;
+            font-family: 'Syne';
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        h4+div {
+            width: fit-content;
+            padding: 4px 10px;
+            box-sizing: border-box;
+            background: rgba(255, 197, 227, 0.133333);
+            border: 1px solid var(--pink);
+            border-radius: 12px;
+
+            display: flex;
+            flex-direction: row;
+            justify-self: end;
+
+            color: #FFC5E3;
+            font-family: 'DM Sans';
+            font-weight: 700;
+            font-size: 11px;
+            line-height: 14px;
+        }
+
+        .card-desc-p {
+            grid-column: span 2;
+            color: #AFA5AD;
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            text-transform: capitalize;
+        }
+
+        .spacer {
+            grid-column: span 2;
+            width: 100%;
+            height: 1px;
+            background-color: var(--purple);
+            border-radius: 20px;
+        }
+
+        .card-fav-spot {
+            grid-column: span 2;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            color: #AFA5AD;
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}
+
 
 
 
@@ -272,7 +450,7 @@ nav {
     border-radius: 1000px;
     padding: 8px 20px;
     width: fit-content;
-    background-color: var(--dark-purple);
+    background-color: var(--purple);
 }
 #gomb2{
     background-color: var(--pink);
@@ -287,7 +465,7 @@ nav {
 }
 #kartya{
     background-color: var(--purple);
-    border: 2px solid var(--dark-purple);
+    border: 2px solid var(--purple);
     border-radius: 5px;
 }
 

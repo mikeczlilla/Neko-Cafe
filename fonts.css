@@ -9,3 +9,9 @@
     src: local("DM Sans"),
          url("fonts/DMSans-VariableFont.ttf") format("truetype");
 }
+
+@font-face {
+    font-family: "Syne";
+    src: local("Syne"),
+         url("fonts/Syne-VariableFont_wght.ttf") format("truetype");
+}
