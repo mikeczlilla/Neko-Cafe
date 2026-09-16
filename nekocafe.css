@@ -479,4 +479,9 @@ section {
 
 .foot{
     display: flex;
+    background-color: #221C24;
+    
+}
+.fo{
+    margin: 69px;
 }
