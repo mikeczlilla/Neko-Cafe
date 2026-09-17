@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="nekocafe.css">
     <link rel="stylesheet" href="fonts.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <title>Neko Cafe</title>
 </head>
+
 <body>
     <nav>
         <div id="nav-left">
@@ -33,7 +35,7 @@
         </button>
     </nav>
 
-    <section id="section1">
+    <section id="section1" aria-label="hero-header">
         <div id="section1-left">
             <h3>✨ Cat cafe culture meets catgirls</h3>
             <h1>WHERE CATS MEET CATGIRLS</h1>
@@ -63,12 +65,11 @@
         </div>
     </section>
 
-    <section id="cat-gallery">
+    <section class="horizontal-gallery" aria-label="cat-gallery">
         <h2>Meet Our Purr-fect Residents</h2>
-
         <div>
             <div class="card">
-                <div class="image"></div>
+                <img src="assets/cat1.png" alt="cat">
                 <div class="card-desc">
                     <h4>Mochi</h4>
                     <div>Lazy & Cuddly</div>
@@ -81,8 +82,9 @@
                     </p>
                 </div>
             </div>
+
             <div class="card">
-                <div class="image"></div>
+                <img src="assets/cat2.png" alt="cat">
                 <div class="card-desc">
                     <h4>Kuro</h4>
                     <div>Playful & Bold</div>
@@ -95,8 +97,9 @@
                     </p>
                 </div>
             </div>
+
             <div class="card">
-                <div class="image"></div>
+                <img src="assets/cat3.png" alt="cat">
                 <div class="card-desc">
                     <h4>Sakura</h4>
                     <div>Gentle Sweetheart</div>
@@ -109,8 +112,9 @@
                     </p>
                 </div>
             </div>
+
             <div class="card">
-                <div class="image"></div>
+                <img src="assets/cat4.png" alt="cat">
                 <div class="card-desc">
                     <h4>Chiyo</h4>
                     <div>Feisty & Guarded</div>
@@ -126,13 +130,11 @@
         </div>
     </section>
 
-
-<section id="cat-gallery">
-        <h2>And meet our catgirls</h2>
-
+    <section class="horizontal-gallery" aria-label="waifu-gallery">
+        <h2>And meet our waifus</h2>
         <div>
             <div class="card">
-                <div class="image"></div>
+                <img src="assets/koneko.png" alt="koneko">
                 <div class="card-desc">
                     <h4>Koneko</h4>
                     <div>Lazy & Cuddly</div>
@@ -145,8 +147,9 @@
                     </p>
                 </div>
             </div>
+
             <div class="card">
-                <div class="image"></div>
+                <img src="assets/rem.png" alt="rem">
                 <div class="card-desc">
                     <h4>Rem</h4>
                     <div>Playful & Bold</div>
@@ -159,8 +162,9 @@
                     </p>
                 </div>
             </div>
+
             <div class="card">
-                <div class="image"></div>
+                <img src="assets/miku.png" alt="miku">
                 <div class="card-desc">
                     <h4>Miku</h4>
                     <div>Gentle Sweetheart</div>
@@ -173,8 +177,9 @@
                     </p>
                 </div>
             </div>
+
             <div class="card">
-                <div class="image"></div>
+                <img src="assets/nemesis.png" alt="nemesis">
                 <div class="card-desc">
                     <h4>Nemesis</h4>
                     <div>Feisty & Teasing</div>
@@ -190,143 +195,252 @@
         </div>
     </section>
 
-
-
-<section>
-    <p></p>
-    <h2></h2>
-    <div>
-        <div id="time">
-            <div id="date"></div>
-            <p></p>
-            <h3></h3>
-            <p></p>
-            <button>Reserve Ticket <img src="" alt=""></button>
+    <section id="foods" aria-label="food-gallery">
+        <div id="foods-top">
+            <h2>Cafe & Pastry Delights</h2>
+            <button type="button">Download PDF menu
+                <img src="assets/download.svg" alt="download">
+            </button>
         </div>
-        <div id="time">
-            <div id="date"></div>
-            <p></p>
-            <h3></h3>
-            <p></p>
-            <button>Reserve Ticket <img src="" alt=""></button>
-        </div>
-    <div id="time">
-            <div id="date"></div>
-            <p></p>
-            <h3></h3>
-            <p></p>
-            <button>Reserve Ticket <img src="" alt=""></button>
-        </div>
-    </div>
-</section>
+        <div id="foods-bottom">
+            <ul>
+                <li>
+                    <img src="assets/food1.png" alt="food">
+                    <div>
+                        <h4>Signature Noir Matcha Latte</h4>
+                        <p id="price">$6.50</p>
+                        <p id="desc">Uji matcha whisked with oat milk, topped with organic activated charcoal and a custom dusty pink cat-face foam art.</p>
+                        <h6 id="category">DRINKS</h6>
+                    </div>
+                </li>
 
+                <li>
+                    <img src="assets/food2.png" alt="food">
+                    <div>
+                        <h4>Chibi Sakura Taiyaki (2pcs)</h4>
+                        <p id="price">$5.75</p>
+                        <p id="desc">Warm fish-shaped waffle pastries filled with a sweet red bean paste and organic salted cherry blossom cream.</p>
+                        <h6 id="category">SWEETS</h6>
+                    </div>
+                </li>
 
-<section id="section6">
-    <p>Social Stream</p>
-    <h2 id="cim" >Captured Moments on <br>#NekoCafe</h2>
-    <p>FOLLOW US @NEKOCAFE</p>
-    <div>
-        <img src="catpic" alt="">
-        <img src="catpic2" alt="">
-        <img src="catpic3" alt="">
-        <img src="catpic4" alt="">
-    </div>
+                <li>
+                    <img src="assets/food3.png" alt="food">
+                    <div>
+                        <h4>Lavender Dream Mochi Set</h4>
+                        <p id="price">$7.00</p>
+                        <p id="desc">An array of three hand-crafted mochi filled with lavender-infused white chocolate ganache and sweet cream cheese.</p>
+                        <h6 id="category">SWEETS</h6>
+                    </div>
+                </li>
+            </ul>
 
-</section>
-<section id="section7">
-        <p>FAN MAIL</p>
-
-    <h1 id="cim">Stories from the Sanctuary</h1>
-
-    <div id="comment">
-    <img src="comment.svg" alt="">
-    <p>My heart melted completely! The matcha is top tier, and Mochi slept on my lap for two whole hours. Absolute paradise for anime & cat lovers alike.</p>
-    <hr>
-    <img src="comente.svg" alt="">
-    <h3>Sora.K</h3>
-    <p>@sora_cosplays</p>
-    </div>
-
-
-    <div id="comment">
-    <img src="comment.svg" alt="">
-    <p>Stepping in here feels like walking straight into a Kyoto lofi anime scene. Highly recommend visiting on Cosplay nights for the maximum aesthetic vibes!</p>
-    <hr>
-    <img src="comente.svg" alt="">
-    <h3>Airi T.</h3>
-    <p>@airicreations</p>
-    </div>
-
-    
-    <div id="comment">
-    <img src="comment.svg" alt="">
-    <p>Clean, cozy, and the staff are incredibly gentle both with customers and the cats. The taiyaki was wonderfully fresh and piping hot.</p>
-    <hr>
-    <img src="comenter.svg" alt="">
-    <h3>Takahiro Y.</h3>
-    <p>@taka_eats_tokyo</p>
-    </div>
-
-
-    </div>
- </section>
-</body>
-
-
-
-<footer class="foot">
-    
-<div class="fo">
-     <div id="nav-left">
-            <div id="nav-pfp">
-                <img src="assets/cat.svg" alt="catface">
+            <div>
+                <div id="img" src="assets/food-big.png" alt="food"></div>
+                <div id="overlay">
+                    <h4>ALL-DAY SPECIAL</h4>
+                    <p>Get 10% off any signature pastry with an hour reservation package!</p>
+                </div>
             </div>
-            <h2>NEKO NOIR</h2>
         </div>
-    
-    <br>
-    <p>Step out of the noisy world into a serene, neon-lit <br>
-         manga sanctuary filled with soft purrs, hand-made <br>
-         pastries, and high-quality brews. </p>
-</div>
-    <div class="fo">
-        <h4 style="color: #FFC5E3;">QUICK NAV</h4>
-        <br>
-        <p>Meet the Cats</p>
-        <br>
-        <p>Cafe Menu</p>
-        <br>
-        <p>Anime Merch</p>
-        <br>
-        <p>RSVP Table</p>
-    </div>
-    <div class="fo">
+    </section>
 
-        <h4 style="color: #C0B2EB;">COMMUNITY</h4>
-        <br>
-        <p>Adoption Process</p>
-        <br>
-        <p>Cosplay Guildelines</p>
-        <br>
-        <p>Manga Submissions</p>
-        <br>
-        <p>Affililate Shelters</p>
-    </div>
-    <div class="fo">
-<h4 style="color: #FFC5E3;">NEKO NEWSLETTER</h4>
-<br>
- <p>Get 10% off your first reservation and early invites to<br>
-    Cosplay Nights.</p>
-    <br>
-    <input id="kereso" type="text" placeholder="Enter email address">
-</div>
+    <section id="events" aria-label="events-calendar">
+        <h2>Cosplay, Manga & Adoption Days</h2>
+
+        <ul>
+            <li>
+                <div id="date">
+                    <p>14</p>
+                    <p>oct</p>
+                </div>
+
+                <div id="desc">
+                    <h6>
+                        <img src="assets/clock.svg" alt="clock"> 6:00 pm
+                    </h6>
+                    <h4> Manga & Milkshakes Hour </h4>
+                    <p>Come read your favorite volumes from our 2,000-book library while enjoying custom sweet shakes and silent company.</p>
+                </div>
+
+                <button type="button">
+                    Reserve ticket
+                    <img src="assets/ticket.svg" alt="ticket">
+                </button>
+            </li>
+
+            <li>
+                <div id="date">
+                    <p>18</p>
+                    <p>oct</p>
+                </div>
+
+                <div id="desc">
+                    <h6>
+                        <img src="assets/clock.svg" alt="clock"> 7:30 pm
+                    </h6>
+                    <h4>Cosplay Cat Walk & Photo Shoot</h4>
+                    <p>Dress up as your favorite anime protagonist. Top 3 cosplayers get high quality Polaroid prints with the cafe cats.</p>
+                </div>
+
+                <button type="button">
+                    Reserve ticket
+                    <img src="assets/ticket.svg" alt="ticket">
+                </button>
+            </li>
+
+            <li>
+                <div id="date">
+                    <p>25</p>
+                    <p>oct</p>
+                </div>
+
+                <div id="desc">
+                    <h6>
+                        <img src="assets/clock.svg" alt="clock"> 1:00 pm
+                    </h6>
+                    <h4>Autumn Cat Adoption Fair</h4>
+                    <p>Co-hosted with local shelters. Come find a permanent rescue feline. Adoption fee discounts apply for cafe regulars.</p>
+                </div>
+
+                <button type="button">
+                    Reserve ticket
+                    <img src="assets/ticket.svg" alt="ticket">
+                </button>
+            </li>
+        </ul>
+    </section>
+
+    <section id="photo-grid" aria-label="photo-grid">
+        <h2>Captured Moments on #NekoCafe</h2>
+        <p>FOLLOW US @NEKOCAFE</p>
+
+        <div>
+            <img src="assets/photo-grid1.png" alt="photo">
+            <img src="assets/photo-grid2.png" alt="photo">
+            <img src="assets/photo-grid3.png" alt="photo">
+            <img src="assets/photo-grid4.png" alt="photo">
+        </div>
+    </section>
+
+    <section id="reviews" aria-label="user-reviews">
+        <h2>Stories from the Sanctuary</h2>
+
+        <div>
+            <div>
+                <img src="assets/comment.svg" alt="comment">
+                <p>My heart melted completely! The matcha is top tier, and Mochi slept on my lap for two whole hours. Absolute paradise for anime & cat lovers alike.</p>
+                <div class="spacer"></div>
+                <div class="profile">
+                    <div><img src="assets/commenter.svg" alt="commenter"></div>
+                    <h4>Sora.K</h4>
+                    <p>@sora_cosplays</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="assets/comment.svg" alt="comment">
+                <p>Stepping in here feels like walking straight into a Kyoto lofi anime scene. Highly recommend visiting on Cosplay nights for the maximum aesthetic vibes!</p>
+                <div class="spacer"></div>
+                <div class="profile">
+                    <div><img src="assets/commenter.svg" alt="commenter"></div>
+                    <h4>Airi T.</h4>
+                    <p>@airicreations</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="assets/comment.svg" alt="comment">
+                <p>Clean, cozy, and the staff are incredibly gentle both with customers and the cats. The taiyaki was wonderfully fresh and piping hot.</p>
+                <div class="spacer"></div>
+                <div class="profile">
+                    <div><img src="assets/commenter.svg" alt="commenter"></div>
+                    <h4>Takahiro Y.</h4>
+                    <p>@taka_eats_tokyo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" aria-label="map-location">
+        <div id="info">
+            <h2>Find Us in the Neon Mist</h2>
+            <div id="address">
+                <div>
+                    <div><img src="assets/map-pin.svg" alt="Logo"></div>
+                    <h4>Address</h4>
+                    <p>120-B Akihabara Electric Town, Chiyoda, Tokyo, JP</p>
+                </div>
+                <div>
+                    <div><img src="assets/clock2.svg" alt="Logo"></div>
+                    <h4>Opening Hours</h4>
+                    <p>Mon – Fri: 12:00 PM – 9:00 PM <br> Sat – Sun: 11:00 AM – 10:00 PM</p>
+                </div>
+            </div>
+
+            <div id="notice">
+                <h4>🐾 VISITOR NOTICE</h4>
+                <p>To ensure our furry friends' happiness, we limit entry to 15 patrons per hour. Walks-ins are welcome, but we highly recommend booking in advance.</p>
+            </div>
+        </div>
+
+        <div id="map">
+            <!-- <img src="assets/map.png" alt="map"> -->
+            <button type="button">
+                <img src="assets/navigation.svg" alt="navigation">
+                OPEN IN GOOGLE MAPS
+            </button>
+        </div>
+    </section>
 
 
 
 
+    <footer class="foot">
 
+        <div class="fo">
+            <div id="nav-left">
+                    <div id="nav-pfp">
+                        <img src="assets/cat.svg" alt="catface">
+                    </div>
+                    <h2>NEKO NOIR</h2>
+                </div>
 
+            <br>
+            <p>Step out of the noisy world into a serene, neon-lit <br>
+                manga sanctuary filled with soft purrs, hand-made <br>
+                pastries, and high-quality brews. </p>
+        </div>
+        <div class="fo">
+            <h4 style="color: #FFC5E3;">QUICK NAV</h4>
+            <br>
+            <p>Meet the Cats</p>
+            <br>
+            <p>Cafe Menu</p>
+            <br>
+            <p>Anime Merch</p>
+            <br>
+            <p>RSVP Table</p>
+        </div>
+        <div class="fo">
 
-</footer>
-
+            <h4 style="color: #C0B2EB;">COMMUNITY</h4>
+            <br>
+            <p>Adoption Process</p>
+            <br>
+            <p>Cosplay Guildelines</p>
+            <br>
+            <p>Manga Submissions</p>
+            <br>
+            <p>Affililate Shelters</p>
+        </div>
+        <div class="fo">
+            <h4 style="color: #FFC5E3;">NEKO NEWSLETTER</h4>
+            <br>
+            <p>Get 10% off your first reservation and early invites to <br> Cosplay Nights.</p>
+            <br>
+            <input id="kereso" type="text" placeholder="Enter email address">
+        </div>
+    </footer>
+</body>
 </html>

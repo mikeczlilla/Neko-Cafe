@@ -1,0 +1,39 @@
+Hatsune Miku Set
+================
+
+Author:
+  - minimoonbun
+    https://ko-fi.com/minimoonbun
+
+Notes:
+https://www.threads.com/@minimoonbun
+https://ko-fi.com/minimoonbun
+https://x.com/minimoonbun
+
+This animated cursor set contains 15 cursors.
+
+Files included:
+  - 14-alternate-select_32-48-64.ani (multisize: 32, 48, 64px)
+  - 15-link-select_32-48-64.ani (multisize: 32, 48, 64px)
+  - 13-move_32-48-64.ani (multisize: 32, 48, 64px)
+  - 12-diagonal-resize-2_32-48-64.ani (multisize: 32, 48, 64px)
+  - 11-diagonal-resize-1_32-48-64.ani (multisize: 32, 48, 64px)
+  - 10-horizontal-resize_32-48-64.ani (multisize: 32, 48, 64px)
+  - 09-vertical-resize_32-48-64.ani (multisize: 32, 48, 64px)
+  - 08-unavailable_32-48-64.ani (multisize: 32, 48, 64px)
+  - 07-handwriting_32-48-64.ani (multisize: 32, 48, 64px)
+  - 06-text-select_32-48-64.ani (multisize: 32, 48, 64px)
+  - 05-precision-select_32-48-64.ani (multisize: 32, 48, 64px)
+  - 04-busy_32-48-64.ani (multisize: 32, 48, 64px)
+  - 03-working-in-background_32-48-64.ani (multisize: 32, 48, 64px)
+  - 02-help-select_32-48-64.ani (multisize: 32, 48, 64px)
+  - 01-normal-select_32-48-64.ani (multisize: 32, 48, 64px)
+
+Installation:
+  1. Right-click install.inf
+  2. Select 'Install'
+  3. Open Control Panel > Mouse > Pointers
+  4. Select 'Hatsune Miku Set' from the Scheme dropdown
+
+Downloaded from Cursors-4U.com
+https://www.cursors-4u.com
